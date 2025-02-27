@@ -4,7 +4,7 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": [
-      "wlr/workspaces"
+      "hyprland/workspaces"
     ],
     "modules-center": [
       "custom/music"
@@ -19,10 +19,10 @@
       "custom/lock",
       "custom/power"
     ],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
-         "format": " {icon} ",
+         "format": "{name}: {icon} ",
          "format-icons": {
              "default": "",
          },
