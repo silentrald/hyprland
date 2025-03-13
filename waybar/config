@@ -42,7 +42,7 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%Y-%m-%d :%H:%M}"
+        "format": " {:%Y-%m-%dT%H:%M}"
     },
     "backlight": {
         "device": "intel_backlight",
@@ -55,7 +55,7 @@
         "format-ethernet": "󰈁",
         "tooltip-format": "{essid} ({ifname} {gwaddr})",
         "format-linked": "",
-        "format-disconnected": "⚠",
+        "format-disconnected": "󱛅",
     },
     "battery": {
         "states": {
@@ -63,8 +63,8 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "",
-        "format-plugged": "",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
         "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
     },
     "pulseaudio": {
@@ -83,7 +83,7 @@
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "wlogout -p layer-shell -b 2 -c 4 -r 4",
         "format": "襤"
     }
 }

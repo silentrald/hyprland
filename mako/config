@@ -1,1 +1,27 @@
 default-timeout=20000
+background-color=#111111e0
+border-color=#ff99cc
+text-color=#ff99cc
+border-radius=10
+padding=8
+
+[urgency=low]
+border-color=#cccccc
+
+[urgency=normal]
+border-color=#d08770
+
+[urgency=high]
+border-color=#bf616a
+default-timeout=0
+
+[category=system]
+anchor=center
+default-timeout=1500
+width=128
+height=256
+icon-location=top
+max-icon-size=64
+border-color=#ff99cc
+font= monospace 16
+# text-alignment=center
