@@ -2,6 +2,4 @@ rofi
 
 # Dependent on the machine being used
 hypr/screen.conf
-hypr/images.conf
-waybar/images.conf
 qt6ct

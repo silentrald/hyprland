@@ -7,6 +7,8 @@
 
 window {
   background-image: image(url("/home/silent/Pictures/wallpapers/sakura-miku-2.png"), url("/home/silent/Pictures/wallpapers/sakura-miku-2.png"));
+  background-size: 100% auto;
+  background-position: center;
 }
 
 button {
