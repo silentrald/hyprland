@@ -17,7 +17,7 @@ button {
   color: @foreground;
   background-color: @background;
   border-style: solid;
-  border-width: 1px;
+  border-width: 4px;
   border-color: @foreground;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,8 +26,9 @@ button {
 }
 
 button:focus, button:active, button:hover {
-  background-color: @background;
-  outline-style: none;
+  background-color: @highlight;
+  border-color: @foreground;
+  opacity: 1;
 }
 
 #lock {
