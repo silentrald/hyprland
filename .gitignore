@@ -1,5 +1,5 @@
 rofi
 
 # Dependent on the machine being used
-hypr/screen.conf
+hypr/custom.conf
 qt6ct
