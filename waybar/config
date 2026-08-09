@@ -85,7 +85,7 @@
     "custom/power": {
         "tooltip": false,
         "on-click": "wlogout -p layer-shell -b 2 -c 4 -r 4",
-        "format": "襤"
+        "format": "⏻"
     },
     "keyboard-state": {
       "numlock": false,

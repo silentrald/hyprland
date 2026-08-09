@@ -2,4 +2,5 @@ rofi
 
 # Dependent on the machine being used
 hypr/custom.conf
+hypr/custom.lua
 qt6ct
