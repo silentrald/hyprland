@@ -295,6 +295,18 @@ hl.bind(mainMod .. " + space", hl.dsp.exec_cmd("uwsm app -- " .. launcher))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd('systemctl --user start --now hypridle && notify-send "Hypridle Start"'))
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd('systemctl --user stop --now hypridle && notify-send "Hypridle Stop"'))
 
+-- Swap window
+swap_directions = { "left", "right", "up", "down" }
+for index, direction in ipairs(swap_directions) do
+  hl.bind(
+    mainMod .. " + SHIFT + " .. direction,
+    hl.dsp.window.move({
+      direction = direction,
+      group_aware = true
+    })
+  )
+end
+
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
